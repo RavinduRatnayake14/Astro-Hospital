@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro | Checkout</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script defer src="./Js/checkout.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAV BAR-->    
+    <header class = "header">
+        <nav class = "Navbar">
+          <img src = "Images/logo image.png" alt = "logo"  width="90" height="60" class="logo">
+          <div class = "search-box">
+            <input type="search" placeholder="Type...">
+            <button type="submit">Search</button>
+          </div>
+            <ul> 
+                <li><a href="Hospital (Home).html">Home</a></li>
+                <li><a class="active" href="Hospital (About).html">About us and contact</a></li>
+                <li><a href="Hospital (Services).html">Services</a></li>
+                <li><a href="Hospital (Doctors).html">Doctors</a></li>
+                <li><a href="Hospital (Consulting).html">Consulting</a></li>
+                <li><a href="index.html">Pharmacy</a></li>     
+            </ul>
+        </nav>        
+      </header>
+            <!--END OF NAV BAR-->
+
+    <!-- Main Content -->
+    <main>
+        <!-- Order Summary -->
+        <section id="order-summary">
+            <h2>Your Order</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items">
+                    <!-- Order items will be dynamically populated -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="order-total">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- User Details Form -->
+<section id="details">
+    <h2>Enter Your Details</h2>
+    <form id="checkout-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="+94" required><br>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select><br>
+
+        <button type="submit" id="pay-button">Pay</button>
+    </form>
+</section>
+
+    </main>
+
+    <!-- FOOTER SECTION-->
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 ASTRO Hospitals (PVT) ltd.  All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
