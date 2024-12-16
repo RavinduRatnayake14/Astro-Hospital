@@ -45,13 +45,18 @@
       <div class="medicine-grid">
           <!-- Each medicine card -->
           <div class="medicine-card">
-              <img src="./Images/paracetamol.jpg" alt="Medicine 1" class="medicine-image">
-              <h3>Paracetamol (500 mg)</h3>
-              <p>Price: $0.50/unit</p>
-              <label for="quantity" style="font-weight: bold;">Quantity:</label>
-              <input type="number" min="0" placeholder="quantity" class="quantity-input">
-              <button class="add-to-cart">Add to Cart</button>
+            <img src="./Images/paracetamol.jpg" alt="Paracetamol 500mg" class="medicine-image">
+            <h3>Paracetamol (500 mg)</h3>
+            <p>Price: $0.50/unit</p>
+            
+            <!-- Label associated with the input -->
+            <label for="quantity-paracetamol" style="font-weight: bold;">Quantity:</label>
+            <input type="number" id="quantity-paracetamol" min="0" placeholder="Quantity" class="quantity-input">
+
+            <!-- Accessible and high-contrast button -->
+            <button class="add-to-cart" style="background-color: #007BFF; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Add to Cart</button>
           </div>
+
 
           <div class="medicine-card">
             <img src="./Images/Ibuprofen.jpg" alt="Medicine 1" class="medicine-image">
