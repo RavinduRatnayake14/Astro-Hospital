@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(/Images/Untitled\ design.jpg);
+    background-image: url(/Images/background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -23,7 +23,7 @@ body {
     max-width: 1440px;
     box-sizing: border-box;
     padding: 0 20px; /* Padding to align content inside */
-    background-color: #a4ccd0; /* Matching the background color */
+    background-color: #137780; /* Matching the background color */
   }
   
   .Navbar ul {
@@ -41,14 +41,14 @@ body {
   
   .Navbar ul li a {
     text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Text color */
+    color: #0c3040; /* Text color */
     padding: 5px 10px; /* Padding around the text */
     border: 2px solid transparent; /* Initial border (invisible) */
     transition: border 0.3s ease; /* Smooth transition for the border */
   }
   
   .Navbar ul li a:hover {
-    border-color: aqua;
+    border-color: #137780;
     color: rgb(255, 255, 255);
   }
   
@@ -63,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     max-width: 1440px;
-    background: #a4ccd0;
+    background: #137780;
     z-index: 100;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -91,41 +91,12 @@ body {
   
   .Navbar .active {
     border-radius: 10px;
-    background-color: #a4ccd0;
+    background-color: #137780;
   }
   
-  /* Search Box */
-  .search-box {
-    display: flex;
-    align-items: center;
-  }
   
-  .search-box input[type="search"] {
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    width: 200px;
-    height: 40px;
-    font-size: 16px;
-    background-color: #fff;
-    padding-left: 20px;
-  }
   
-  .search-box button[type="submit"] {
-    margin-left: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 40px;
-    background-color: #3fa8c2;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-  }
   
-  .search-box input[type="search"]:focus {
-    outline: none;
-  }
   
   /* Responsive Styling */
   @media (max-width: 768px) {
@@ -184,7 +155,7 @@ h1 {
 
 .medicine-category h2 {
   font-size: 1.8em;
-  color: #4cafa3;
+  color: #137780;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -237,7 +208,7 @@ h1 {
 
 /* Add to Cart Button */
 .add-to-cart {
-  background-color: #4cafad;
+  background-color: #137780;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -258,7 +229,7 @@ h1 {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #50c1c1;
+  background-color: #137780;
   color: white;
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
@@ -284,7 +255,7 @@ th, td {
 }
 
 th {
-    background-color: #618d91;
+    background-color: #137780;
     color: white;
 }
 
