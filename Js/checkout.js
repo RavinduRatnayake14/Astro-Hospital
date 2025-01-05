@@ -1,4 +1,4 @@
-// Load order summary from localStorage
+// Load order from localStorage
 document.addEventListener("DOMContentLoaded", () => {
     const cart = JSON.parse(localStorage.getItem("cart-items")) || [];
     const orderItems = document.getElementById("order-items");

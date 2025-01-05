@@ -1,8 +1,8 @@
-// Initialize cart and favorites
+
 let cart = JSON.parse(localStorage.getItem("cart-items")) || [];
 let favorites = null;
 
-// Add to Cart functionality
+// Add to Cart function
 document.querySelectorAll(".add-to-cart").forEach((button) => {
     button.addEventListener("click", (event) => {
         const card = event.target.closest(".medicine-card");
@@ -61,7 +61,7 @@ document.getElementById("apply-favourites").addEventListener("click", () => {
         favorites = JSON.parse(savedFavorites);
         cart = [...favorites];
         updateCartDisplay();
-        localStorage.setItem("cart-items", JSON.stringify(cart)); // Sync with localStorage
+        localStorage.setItem("cart-items", JSON.stringify(cart)); 
     } else {
         alert("No favorites saved.");
     }
